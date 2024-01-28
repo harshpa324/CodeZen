@@ -11,7 +11,7 @@ Hey there! Welcome to CodeZen â€“ an online code editor for hassle free coding ð
 
 ## Quick Start
 
-1. Clone this repository: `1. git clone 2. Run npm run dev to start the code editor`
+1. Clone this repository: `1. git clone https://github.com/harshpa324/CodeZen.git`
 2. Run npm run dev to start the code editor
 3. Start vibing with your code!
 
