@@ -4,7 +4,7 @@ import CodeEditor from "./CodeEditor";
 import axios from "axios";
 import { classnames } from "../utils/general";
 import { languageOptions } from "../constants/languageOptions";
-
+import Navbar from "./Navbar";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -118,7 +118,7 @@ const Landing = () => {
           console.log("too many requests", status);
 
           showErrorToast(
-            `Quota of 100 requests exceeded for the Day! Please read the blog on freeCodeCamp to learn how to setup your own RAPID API Judge0!`,
+            `Quota of 100 requests exceeded for the Day!`,
             10000
           );
         }
@@ -203,6 +203,7 @@ const Landing = () => {
 
   return (
     <>
+    <Navbar />
       <ToastContainer
         position="top-right"
         autoClose={2000}
