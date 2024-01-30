@@ -2,7 +2,7 @@
 
 Hey there! Welcome to CodeZen – an online code editor for hassle free coding 🚀
 
-## What's the can it do?
+## What it can do?
 
 - **Live Editing:** Code and see changes in real-time. No need to refresh, we got you covered!
 - **Syntax Bliss:** Colors and styles that make your code look as good as it runs.
