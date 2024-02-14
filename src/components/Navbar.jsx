@@ -5,104 +5,21 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 
-/*function NavItems({ isModalView = false, isAdminView, router }) {
-
-
-  return (
-    <div
-      className={`items-center justify-between w-full md:flex md:w-auto ${isModalView ? "" : "hidden"
-        }`}
-      id="nav-items"
-    >
-      <ul
-        className={`flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ${isModalView ? "border-none" : "border border-gray-100"
-          }`}
-      >
-        {isAdminView
-          ? adminNavOptions.map((item) => (
-            <li
-              className="cursor-pointer text-red-700 rounded hover:text-pink-400 transition md:p-0"
-              key={item.id}
-              onClick={() => router.push(item.path)}
-            >
-              {item.label}
-            </li>
-          ))
-          : navOptions.map((item) => (
-            <li
-              className="cursor-pointer  text-red-700 rounded hover:text-pink-400 transition md:p-0"
-              key={item.id}
-              onClick={() => router.push(item.path)}
-            >
-              {item.label}
-            </li>
-          ))}
-      </ul>
-    </div>
-  );
-}*/
 
 export default function Navbar() {
     const isAuthUser = false;
-      /*const { showNavModal, setShowNavModal } = useContext(GlobalContext);
-  const {
-    user,
-    isAuthUser,
-    setUser,
-    setIsAuthUser,
-    currentUpdatedProduct,
-    setCurrentUpdatedProduct,
-    showCartModal,
-    setShowCartModal
-  } = useContext(GlobalContext);
-
-  const pathName = usePathname();
-  const router = useRouter();
-
-
-
-  useEffect(() => {
-    if (
-      pathName !== "/admin-view/add-product" &&
-      currentUpdatedProduct !== null
-    )
-      setCurrentUpdatedProduct(null);
-  }, [pathName]);
-
-  function handleLogout() {
-    setIsAuthUser(false);
-    setUser(null);
-    Cookies.remove("token");
-    localStorage.clear();
-
-  }
-
-  const isAdminView = pathName.includes("admin-view");
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const checkAuthentication = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 450));
-      setLoading(false);
-    };
-    checkAuthentication();
-  }, [user]);
-
-  const handleButtonClick = () => {
-    
-    setShowNavModal((prevState) => !prevState);
-  }*/
+      
   return (
     <>
     
-      <nav className="bg-blue-200 fixed w-full z-20 top-0 left-0 border-b border-gray-100 ">
+      <nav className="bg-gradient-to-r from-nav via-violet-600 to-violet-500 fixed w-full z-20 top-0 left-0 border-b  border-white ">
 
         <div className="max-w-screen-xl flex space-x-6  items-center justify-between mx-auto p-4">
           <div
             onClick={() => router.push("/")}
             className="flex items-center cursor-pointer"
           >
-            <a src="" className="text-center text-red-700 hover:text-pink-400 transition relative"  >CODEZEN</a>
+            <a src="" className="text-center text-gray-200 hover:text-text_hover transition   relative"  >CODEZEN</a>
           </div>
           
 
@@ -113,7 +30,7 @@ export default function Navbar() {
                 
                 <Link
                   href=""
-                  className="text-center text-red-700 hover:text-pink-400 transition relative"
+                  className="text-center text-gray-200 hover:text-text_hover transition   relative"
                 >
                   <div className="text 2xl">
                     <i className="far fa-user" />
@@ -128,7 +45,7 @@ export default function Navbar() {
             <button
               onClick={handleLogout}
               className={
-                "text-red-700 hover:text-pink-400 transition"
+                "text-gray-200 hover:text-text_hover transition  "
               }
             >
               Logout
@@ -137,7 +54,7 @@ export default function Navbar() {
             <button
               onClick={() => router.push("/login")}
               className={
-                "text-red-700 hover:text-pink-400 transition"
+                "text-gray-200 hover:text-text_hover transition  "
               }
             >
               Login/Register
@@ -146,7 +63,7 @@ export default function Navbar() {
           {/*<button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-red-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 text-sm text-gray-500 rounded md:hidden hover:bg-white focus:outline-none focus:ring-2 focus:ring-white dark:text-gray-200 dark:hover:bg-white dark:focus:ring-white"
             aria-controls="navbar-sticky"
             aria-expanded={showNavModal ? 'true' : 'false'}
             onClick={handleButtonClick}
