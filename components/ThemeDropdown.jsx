@@ -6,6 +6,7 @@ import { customStyles } from "../constants/customStyles";
 const ThemeDropdown = ({ handleThemeChange, theme }) => {
   return (
     <Select
+      instanceId="postType"
       placeholder={`Select Theme`}
       options={Object.entries(monacoThemes).map(([themeId, themeName]) => ({
         label: themeName,

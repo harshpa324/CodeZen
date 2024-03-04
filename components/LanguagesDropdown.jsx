@@ -3,9 +3,10 @@ import Select from "react-select";
 import { customStyles } from "../constants/customStyles";
 import { languageOptions } from "../constants/languageOptions.jsx";
 
-const LanguageDropdown = ({ onSelectChange }) => {
+const LanguagesDropdown = ({ onSelectChange }) => {
   return (
     <Select
+      instanceId="postType"
       placeholder="Select language"
       options={languageOptions}
       defaultValue={languageOptions[0]}
@@ -14,4 +15,4 @@ const LanguageDropdown = ({ onSelectChange }) => {
     />
   );
 };
-export default LanguageDropdown;
+export default LanguagesDropdown;
