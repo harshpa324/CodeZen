@@ -1,5 +1,3 @@
-#### Under Devlopment
-
 # CodeZen
 
 Hey there! Welcome to CodeZen – an online code editor for hassle free coding 🚀
