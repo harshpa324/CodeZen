@@ -8,7 +8,7 @@ async function handler(req, res) {
     let { db } = await connectToDatabase()
 
     try {
-      const filter = { _id: new ObjectID(codeId) }
+      const filter = { _id: new ObjectId(codeId) }
       const options = { upsert: true }
       const updateDoc = {
         $set: {
