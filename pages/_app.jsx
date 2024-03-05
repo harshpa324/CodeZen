@@ -12,6 +12,8 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
     <>
       <Head>
       <title>CodeZen</title>
+      <meta name="description" content="CodeZen - Your online code editor for quick and hassle-free coding. Start writing, testing, debugging and saving code effortlessly." >
+      </meta>
       </Head>
       <SessionProvider session={session}>
         <ChakraProvider>
