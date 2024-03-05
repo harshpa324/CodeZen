@@ -1,4 +1,4 @@
-import { unstable_getServerSession } from "next-auth"
+import { getServerSession } from "next-auth"
 import React, { useState } from "react"
 import Landing from "../.."
 import { authOptions } from "../../api/auth/[...nextauth]"
@@ -6,7 +6,7 @@ import socketIOClient from "socket.io-client"
 
 const PairCodePage = props => {
   const [code, setCode] = useState("")
-  const socket = socketIOClient("localhost:3000", {
+  const socket = socketIOClient("code-zen.vercel.app", {
     query: {
       roomId: props.roomId
     }
@@ -32,7 +32,7 @@ export default PairCodePage
 
 export async function getServerSideProps(context) {
   try {
-    const session = await unstable_getServerSession(
+    const session = await getServerSession(
       context.req,
       context.res,
       authOptions

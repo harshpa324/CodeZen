@@ -131,7 +131,7 @@ const Landing = props => {
         label: "Oceanic Next"
       })
     })
-    // const socket = socketIOClient("localhost:3001");
+    // const socket = socketIOClient("code-zen.vercel.app");
     // socket.emit("join","abc");
   }, [])
 

@@ -43,7 +43,7 @@ const Signup = () => {
       await signIn("credentials", {
         email,
         password,
-        callbackUrl: "http://localhost:3000",
+        callbackUrl: "https://code-zen.vercel.app",
         redirect: false
       }).then(() => {
         Router.push("/")

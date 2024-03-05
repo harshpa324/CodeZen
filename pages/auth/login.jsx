@@ -23,7 +23,7 @@ const Login = () => {
     await signIn("credentials", {
       email,
       password,
-      callbackUrl: "http://localhost:3000",
+      callbackUrl: "https://code-zen.vercel.app",
       redirect: false
     }).then(function(result) {
       console.log(result)
