@@ -54,7 +54,7 @@ const Signup = () => {
 
   return (
     <div className="bg-bg_main h-screen flex items-center">
-      <div className="m-auto p-12 border w-full md:w-4/12 bg-white shadow-[10px_10px_0px_0px_rgba(0,0,0)] rounded-xl">
+      <div className="m-auto p-12 border w-full md:w-4/12 bg-white  rounded-xl">
         <p className="text-4xl text-center font-bold">Sign Up!</p>
         <div className="mt-12 mx-auto">
           <form className="flex flex-col" onSubmit={onSubmit}>

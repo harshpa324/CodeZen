@@ -14,11 +14,12 @@ const Navbar = () => {
   }
   return (
     <div className="flex items-center w-full p-4 py-2 bg-gradient-to-r from-nav via-violet-600 to-violet-700">
-      <Link href="/" className="z-10 text-2xl font-bold px-3 md:px-4 py-2 text-center text-[#fafbfb] hover:text-white  transition duration-600   relative">
-          
+      
+      <div className="hidden md:block z-10 text-2xl font-bold px-3 md:px-4 py-2 text-center text-[#fafbfb] hover:text-white  transition duration-600   relative">
+        <Link href="/">
           CodeZen
-        
-      </Link>
+        </Link>
+      </div>
       <div className="cursor-pointer space-x-4 items-center justify-center sm:justify-around md:justify-end w-full md:ml-auto flex">
         <Link href="/" className="z-10 px-3 md:px-4 py-2 text-center text-[#78c5f4] hover:text-white  transition duration-600   relative">
           

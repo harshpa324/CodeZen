@@ -6,6 +6,7 @@ import "../styles/index.css"
 import Navbar from "../components/Navbar"
 import Head from "next/head"
 import NextTopLoader from "nextjs-toploader"
+import Header from "@/components/Header"
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
@@ -29,6 +30,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             draggable
             pauseOnHover
           />
+          <div className="md:hidden">
+            <Header />
+          </div>
           <div className="hidden md:block">
             <Navbar />
           </div>
